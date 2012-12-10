@@ -4,6 +4,13 @@
 	<meta charset="utf-8" />
 	<title>Ben Brooks</title>
 	<link rel="stylesheet" href="res/style.css" />
+	<script type="text/javascript">
+		window.addEventListener("load",function() {
+		  setTimeout(function(){
+		    window.scrollTo(0, 1);
+		  }, 0);
+		});
+	</script>
 </head>
 <body>
 	<div id="content">
