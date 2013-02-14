@@ -13,13 +13,12 @@
 	</script>
 </head>
 <body>
-	<a href="https://github.com/bbrks/website"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a>
 	<div id="content">
-		<h1><a href="">Ben Brooks</a></h1>
+		<h1><img src="res/headerlogo.png" alt="My name is Ben Brooks, I make pretty things." /></h1>
 		<ul>
 			<li><a href="http://facebook.com/bbrks" title="Ben Brooks on Facebook">f</a></li>
 			<li><a href="http://uk.linkedin.com/in/bbrks" title="Ben Brooks on LinkedIn">l</a></li>
-			<li><a href="http://github.com/bbrks" title="Ben Brooks on GitHub">g</a></li>
+			<li><a href="http://github.com/bbrks" title="Ben Brooks on GitHub">G</a></li>
 			<li><a href="http://twitter.com/bbrks_" title="Ben Brooks on Twitter">T</a></li>
 			<li><a href="http://flickr.com/bbrks" title="Ben Brooks on Flickr">F</a></li>
 			<li><a href="http://last.fm/user/bbrks_" title="Ben Brooks on LastFM">L</a></li>
