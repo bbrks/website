@@ -17,9 +17,9 @@
 		<h1><img src="res/headerlogo.png" alt="My name is Ben Brooks, I make pretty things." /></h1>
 		<ul>
 			<li><a href="http://facebook.com/bbrks" title="Ben Brooks on Facebook">f</a></li>
-			<li><a href="http://uk.linkedin.com/in/bbrks" title="Ben Brooks on LinkedIn">l</a></li>
-			<li><a href="http://github.com/bbrks" title="Ben Brooks on GitHub">G</a></li>
 			<li><a href="http://twitter.com/bbrks_" title="Ben Brooks on Twitter">T</a></li>
+			<li><a href="http://github.com/bbrks" title="Ben Brooks on GitHub">G</a></li>
+			<li><a href="http://uk.linkedin.com/in/bbrks" title="Ben Brooks on LinkedIn">l</a></li>
 			<li><a href="http://flickr.com/bbrks" title="Ben Brooks on Flickr">F</a></li>
 			<li><a href="http://last.fm/user/bbrks_" title="Ben Brooks on LastFM">L</a></li>
 			<li><a href="mailto:ben@bbrks.me" title="E-Mail Me!">&#x2709;</a></li>
