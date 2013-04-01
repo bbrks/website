@@ -98,7 +98,7 @@
 		</div>
 
 		<div class="hspace text-center">
-			<h1>TODO</h1>
+			<h1>Aaaand I've run out of things to say :)</h1>
 		</div>
 
 		<div class="whitebg">
