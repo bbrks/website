@@ -50,10 +50,37 @@
 						<p>Integrated with <a href="http://steamcommunity.com">Steam Community</a> and running on a custom built CMS. As seen on <a href="http://www.pcgamer.com/2012/08/14/the-origin-of-call-of-dutys-most-heard-sound/">PCGamer.com</a> and <a href="http://www.tfportal.de/news/1555/tfportal-fanstuff-spezial-teil-1-websites/">tfportal.de</a>.</p>
 					</div>
 				</div>
-				<div class="macbook">
-					<img src="res/img/tf2d.jpg" />
-					<img src="res/img/glare.png" />
+
+				<div id="tf2dCarousel" class="carousel slide">
+					<ol class="carousel-indicators">
+						<li data-target="#tf2dCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#tf2dCarousel" data-slide-to="1"></li>
+						<li data-target="#tf2dCarousel" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="active item">
+							<div class="macbook">
+								<img src="res/img/tf2d.jpg" />
+								<img src="res/img/glare.png" />
+							</div>
+						</div>
+						<div class="item">
+							<div class="macbook">
+								<img src="res/img/tf2d2.jpg" />
+								<img src="res/img/glare.png" />
+							</div>
+						</div>
+						<div class="item">
+							<div class="macbook">
+								<img src="res/img/tf2d3.jpg" />
+								<img src="res/img/glare.png" />
+							</div>
+						</div>
+					</div>
+					<a class="carousel-control left" href="#tf2dCarousel" data-slide="prev">&lsaquo;</a>
+ 					<a class="carousel-control right" href="#tf2dCarousel" data-slide="next">&rsaquo;</a>
 				</div>
+
 			</div>
 		</div>
 
@@ -70,10 +97,30 @@
 						<p>Created for a university assignment, it features a PHP backend interacting with a SQL database, as well as JS for front-end effects and form validation.</p>
 					</div>
 				</div>
-				<div class="macbook">
-					<img src="res/img/abergaemz.jpg" />
-					<img src="res/img/glare.png" />
+
+				<div id="abergaemzCarousel" class="carousel slide">
+					<ol class="carousel-indicators">
+						<li data-target="#abergaemzCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#abergaemzCarousel" data-slide-to="1"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="active item">
+							<div class="macbook">
+								<img src="res/img/abergaemz.jpg" />
+								<img src="res/img/glare.png" />
+							</div>
+						</div>
+						<div class="item">
+							<div class="macbook">
+								<img src="res/img/abergaemz2.jpg" />
+								<img src="res/img/glare.png" />
+							</div>
+						</div>
+					</div>
+					<a class="carousel-control left" href="#abergaemzCarousel" data-slide="prev">&lsaquo;</a>
+ 					<a class="carousel-control right" href="#abergaemzCarousel" data-slide="next">&rsaquo;</a>
 				</div>
+
 			</div>
 		</div>
 
@@ -90,10 +137,30 @@
 						<p>Branding for the Aberystwyth Photography Society to be used on posters and fliers around campus and town.</p>
 					</div>
 				</div>
-				<div class="macbook">
-					<img src="res/img/aberphotosoc.jpg" />
-					<img src="res/img/glare.png" />
+
+				<div id="aberphotosocCarousel" class="carousel slide">
+					<ol class="carousel-indicators">
+						<li data-target="#aberphotosocCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#aberphotosocCarousel" data-slide-to="1"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="active item">
+							<div class="macbook">
+								<img src="res/img/aberphotosoc.jpg" />
+								<img src="res/img/glare.png" />
+							</div>
+						</div>
+						<div class="item">
+							<div class="macbook">
+								<img src="res/img/aberphotosoc2.jpg" />
+								<img src="res/img/glare.png" />
+							</div>
+						</div>
+					</div>
+					<a class="carousel-control left" href="#aberphotosocCarousel" data-slide="prev">&lsaquo;</a>
+ 					<a class="carousel-control right" href="#aberphotosocCarousel" data-slide="next">&rsaquo;</a>
 				</div>
+
 			</div>
 		</div>
 
@@ -117,5 +184,25 @@
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="res/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+		$('.carousel').carousel({
+		  interval: 3000
+		})</script>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-3687044-6']);
+		  _gaq.push(['_setDomainName', 'bbrks.me']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
 	</body>
 </html>
