@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'bbrks_icons';
+  src: url("../font/bbrks_icons.eot");
+  src: url("../font/bbrks_icons.eot?#iefix") format('embedded-opentype'), url("../font/bbrks_icons.woff") format('woff'), url("../font/bbrks_icons.ttf") format('truetype'), url("../font/bbrks_icons.svg#bbrks_icons") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	background: #676064;
+	background-image: url("../img/noise.png"), url("../img/bg.jpg");
+	background-position: left top, center center;
+	background-repeat: repeat, no-repeat;
+	background-attachment: scroll, fixed;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover;
+	background-size: auto, cover;
+}
+
+a {
+	color: #f66;
+}
+
+a:hover {
+	color: #ff1919;
+}
+
+h3 {
+	color: #bbb;
+}
+
+h2 a {
+	color: #333;
+}
+
+.hspace {
+	color: #fff;
+	text-shadow: 0 0 10px rgba(0,0,0,.1);
+	padding: 200px 0;
+}
+
+.whitebg{
+	background: #fff url("../img/noise2.png");
+}
+
+.container {
+	padding: 25px 0;
+}
+
+.social {
+	margin-top:23px;
+	font-family: 'bbrks_icons', serif;
+}
+
+.social a {
+	color: #666;
+}
+
+.social a:hover {
+	color: #ff1919;
+}
+
+.macbook {
+	margin: 0 auto;
+	background: url("../img/macbook.png") no-repeat;
+	position: relative;
+	width: 940px;
+	height: 498px;
+}
+
+.macbook img {
+	position: absolute;
+	top: 39px;
+	left: 167px;
+}
+
+.avatar {
+	margin:-15px 10px 0 0;
+	-webkit-transition: .5s box-shadow ease-out;
+}
+
+.avatar:hover {
+	box-shadow: 0 0 10px 2px rgba(0,0,0,.33);
+	-webkit-transition: .5s box-shadow ease-out;
+}
+
+@media (max-width: 767px) {
+	body {
+		padding: 0;
+	}
+	.container{
+		padding: 0 20px;
+	}
+	.hspace {
+		padding: 100px 0;
+	}
+}
+
