@@ -1,3 +1,7 @@
+/* Mini reset */
+html, body, div, h1, h2, h3, h4, p, a, img, ul, li {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+ul {list-style: none;}
+
 @charset "UTF-8";
 @font-face {
   font-family: 'bbrks_icons';
@@ -13,45 +17,138 @@ body {
 	background-position: left top, center center;
 	background-repeat: repeat, no-repeat;
 	background-attachment: scroll, fixed;
+
+	/* ie8 hacks :( */
+	background-image: url("../img/bg.jpg")\9;
+	background-position: center center\9;
+	background-repeat: no-repeat\9;
+	background-attachment: fixed\9;
+
 	-webkit-background-size: auto, cover;
 	-moz-background-size: auto, cover;
 	-o-background-size: auto, cover;
 	background-size: auto, cover;
+
+	color: #333;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	min-width: 950px;
+
+	line-height: 1.5em;
+}
+
+/* simple grid */
+.grid_2,.grid_3 {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.grid_2 {width:360px;}
+.grid_3 {width:550px;}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 950px;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+h1, h2, h3, h4 {
+	font-weight: bold;
+}
+
+h1,h4 {
+	font-size: 2.5em;
+}
+
+h1 {
+	margin:10px 10px 0 20px;
+	float: left;
+}
+
+h2 {
+	font-size: 1.75em;
+	margin-top:10px;
+	color: #666;
+}
+
+h2:before {
+	content: "| ";
+	font-size: 1.25em;
+	color: #eee;
+}
+
+h3 {
+	font-size: 2em;
+	margin-bottom: 15px;
+}
+
+h3 a {
+	color: #333;
+}
+
+p.lead {
+	font-size: 1.33em;
+	margin: 15px 0;
 }
 
 a {
 	color: #f66;
+	text-decoration: none;
+	transition: .25s color;
 }
 
 a:hover {
 	color: #ff1919;
+	text-decoration: underline;
+	transition: .25s color;
 }
 
-h3 {
-	color: #bbb;
+.row {
+	background: #fff url("../img/noise2.png");
+	/* Ugly IE6 hack */
+	_background: #fff;
+	padding: 25px 0;
 }
 
-h2 a {
-	color: #333;
-}
-
-.hspace {
+.row2 {
+	text-align: center;
 	color: #fff;
 	text-shadow: 0 0 10px rgba(0,0,0,.1);
 	padding: 200px 0;
 }
 
-.whitebg{
-	background: #fff url("../img/noise2.png");
-}
-
-.container {
-	padding: 25px 0;
+.avatar {
+	width: 64px;
+	height: 64px;
+	display: block;
+	float: left;
+	margin:-10px 0 0 0;
+	-webkit-border-radius: 512px;
+	-moz-border-radius: 512px;
+	-o-border-radius: 512px;
+	border-radius: 512px;
 }
 
 .social {
-	margin-top:23px;
-	font-family: 'bbrks_icons', serif;
+	font-family: bbrks_icons;
+	text-align: right;
+	margin-top: 13px;
+	list-style-type: none;
+}
+
+.social li {
+	display: inline;
+	margin: 0 5px;
 }
 
 .social a {
@@ -60,41 +157,114 @@ h2 a {
 
 .social a:hover {
 	color: #ff1919;
+	text-decoration: none;
 }
 
-.macbook {
-	margin: 0 auto;
-	background: url("../img/macbook.png") no-repeat;
-	position: relative;
-	width: 940px;
-	height: 498px;
+.footer, .footer ul {
+	margin: 20px auto;
+	color: #666;
+	text-align: center;
 }
 
-.macbook img {
-	position: absolute;
-	top: 39px;
-	left: 167px;
+.promo {
+	text-align: center;
+	margin: 25px auto 0;
+	width: 950px;
+	height: 660px;
 }
 
-.avatar {
-	margin:-15px 10px 0 0;
-	-webkit-transition: .5s box-shadow ease-out;
+.promocols3 {
+	background-position: 1900px 0;
+	animation: animpromo3 10s infinite ease-in-out;
+	-moz-animation: animpromo3 10s infinite ease-in-out;
+	-webkit-animation: animpromo3 10s infinite ease-in-out;
+	-o-animation: animpromo3 10s infinite ease-in-out;
+
 }
 
-.avatar:hover {
-	box-shadow: 0 0 10px 2px rgba(0,0,0,.33);
-	-webkit-transition: .5s box-shadow ease-out;
+.promocols2 {
+	background-position: 0 0;
+	animation: animpromo2 8s infinite ease-in-out;
+	-moz-animation: animpromo2 8s infinite ease-in-out;
+	-webkit-animation: animpromo2 8s infinite ease-in-out;
+	-o-animation: animpromo2 8s infinite ease-in-out;
 }
 
-@media (max-width: 767px) {
-	body {
-		padding: 0;
-	}
-	.container{
-		padding: 0 20px;
-	}
-	.hspace {
-		padding: 100px 0;
-	}
+.promotf2d {
+	background-image: url("../img/tf2d.jpg");
 }
 
+.promoabergaemz {
+	background-image: url("../img/abergaemz.jpg");
+}
+
+.promoaberphoto {
+	background-image: url("../img/aberphotosoc.jpg");
+	background-position: 950px 0;
+}
+
+@keyframes animpromo3 {
+	  0% { background-position: 0 0; }
+	 13% { background-position: 50% 0; }
+	 33% { background-position: 50% 0; }
+	 46% { background-position: 100% 0; }
+	 66% { background-position: 100% 0; }
+	 80% { background-position: 150% 0; }
+	100% { background-position: 150% 0; }
+}
+@-moz-keyframes animpromo3 {
+	  0% { background-position: 0 0; }
+	 13% { background-position: 50% 0; }
+	 33% { background-position: 50% 0; }
+	 46% { background-position: 100% 0; }
+	 66% { background-position: 100% 0; }
+	 80% { background-position: 150% 0; }
+	100% { background-position: 150% 0; }
+}
+@-webkit-keyframes animpromo3 {
+	  0% { background-position: 0 0; }
+	 13% { background-position: 50% 0; }
+	 33% { background-position: 50% 0; }
+	 46% { background-position: 100% 0; }
+	 66% { background-position: 100% 0; }
+	 80% { background-position: 150% 0; }
+	100% { background-position: 150% 0; }
+}
+@-o-keyframes animpromo3 {
+	  0% { background-position: 0 0; }
+	 13% { background-position: 50% 0; }
+	 33% { background-position: 50% 0; }
+	 46% { background-position: 100% 0; }
+	 66% { background-position: 100% 0; }
+	 80% { background-position: 150% 0; }
+	100% { background-position: 150% 0; }
+}
+
+@keyframes animpromo2 {
+	  0% { background-position: 0 0; }
+	 20% { background-position: 100% 0; }
+	 40% { background-position: 100% 0; }
+	 80% { background-position: 200% 0; }
+	 100% { background-position: 200% 0; }
+}
+@-moz-keyframes animpromo2 {
+	  0% { background-position: 0 0; }
+	 20% { background-position: 100% 0; }
+	 40% { background-position: 100% 0; }
+	 80% { background-position: 200% 0; }
+	 100% { background-position: 200% 0; }
+}
+@-webkit-keyframes animpromo2 {
+	  0% { background-position: 0 0; }
+	 20% { background-position: 100% 0; }
+	 40% { background-position: 100% 0; }
+	 80% { background-position: 200% 0; }
+	 100% { background-position: 200% 0; }
+}
+@-o-keyframes animpromo2 {
+	  0% { background-position: 0 0; }
+	 20% { background-position: 100% 0; }
+	 40% { background-position: 100% 0; }
+	 80% { background-position: 200% 0; }
+	 100% { background-position: 200% 0; }
+}
